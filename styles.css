@@ -45,6 +45,12 @@ button{
     margin: 0 auto;
 }
 
+.row__column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 /* Navagation Bar*/
 
 nav{
@@ -97,8 +103,8 @@ li{
     text-decoration: none;
 }
 
-/* Landing page*/
 
+/* Landing page*/
 
 
 .header__container{
@@ -222,8 +228,8 @@ button:active{
 /*Features*/
 
 #features{
-    height: 1000px;
-    padding-top:8vw;
+    height: 880px;
+    padding-top:10vw;
     background-color: rgba(115, 66, 214, 0.1);
 }
 
@@ -231,7 +237,70 @@ button:active{
     display: flex;
 }
 
+.book{
+    width: 25%;
+    padding: 24px;
+}
+
 
 .book__img{
     max-height: 380px;
+    transition: all 300ms ease;
+    cursor: no-drop;
+    padding-bottom: 10px;
 }
+
+.book__img--wrapper{
+    margin-bottom: 8px;
+    border-radius: 4px;
+    overflow: hidden;
+    display: flex;
+}
+
+.book:hover .book__img{
+    transform: scale(1.03);
+}
+
+.book__title{
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.book__title:hover{
+    text-decoration: underline;
+    cursor: no-drop;
+    transition: all 300ms ease;
+}
+
+.book__ratings{
+    margin-bottom: 8px;
+    color: #fabf2a;
+}
+
+.book__price--normal{
+    text-decoration: line-through;
+    padding-right: 6px;
+    color: #bfbfbf;
+}
+
+/* Latest Books */
+
+#recent{
+    height: 1000px;
+    padding-top:4vw;
+}
+
+.books{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Explore */
+
+#explore{
+    height: 200px;
+    padding-top:4vw;
+    background-color: rgba(115, 66, 214, 0.1);
+}
+
+
